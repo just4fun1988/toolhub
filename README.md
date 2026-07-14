@@ -46,7 +46,3 @@ src/index.js          Cloudflare Worker 入口
 scripts/check-site.mjs 结构和部署前检查
 wrangler.jsonc        Workers Static Assets 配置
 ```
-
-## 收录新工具
-
-使用 GitHub 的 **Suggest a tool** Issue 模板。收录标准：浏览器可用、用途明确、链接可信，且不会用误导式按钮诱导下载。

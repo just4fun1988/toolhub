@@ -15,12 +15,11 @@
   const themeToggle = document.querySelector("#theme-toggle");
 
   const storedLanguage = localStorage.getItem("toolhub-language");
-  const browserLanguage = navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
   const storedTheme = localStorage.getItem("toolhub-theme");
   const systemTheme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
   const state = {
-    language: storedLanguage === "zh" || storedLanguage === "en" ? storedLanguage : browserLanguage,
+    language: storedLanguage === "zh" || storedLanguage === "en" ? storedLanguage : "en",
     theme: storedTheme === "dark" || storedTheme === "light" ? storedTheme : systemTheme,
     category: "all",
     query: ""
